@@ -5,18 +5,36 @@
 
 //To test your code, set a value for x, and console.log it. Try different values
 
+let result;
+// const x = 5;
 
+if (x % 3 === 0 && x % 15 === 0) {
+  result = "fizzbuzz";
+} else if (x % 3 === 0) {
+  result = "fizz";
+} else if (x % 5 === 0) {
+  result = "buzz";
+} else {
+  result = x;
+}
 
-
-
-
-
-
-
-
-
+// console.log(result);
 
 //part 2
 //Taking what we learned from the conditionals practice with fizzbuzz, We are going to Loop through every number from 1 to max
 //applying those same exact rules to each number and, before ending the loop,
 //printing out the result to the console via console.log(result). A For Loop would work
+
+for (let x = 1; x <= 100; x++) {
+  if (x % 3 === 0 && x % 15 === 0) {
+    result = "fizzbuzz";
+  } else if (x % 3 === 0) {
+    result = "fizz";
+  } else if (x % 5 === 0) {
+    result = "buzz";
+  } else {
+    result = x;
+  }
+}
+
+console.log(result);
